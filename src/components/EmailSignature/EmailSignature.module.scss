@@ -1,0 +1,103 @@
+.emailSignature {
+  margin-top: 50px;
+  .emailSignatureWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    .profileContainer {
+      max-width: 550px;
+      margin: 50px 0;
+      .left,
+      .right,
+      .center {
+        display: flex;
+        flex-wrap: wrap;
+        .profilePic {
+          flex: 50%;
+          text-align: center;
+          img {
+            max-width: 150px;
+            border: 1px solid gray;
+            border-radius: 50%;
+          }
+        }
+        .socialMedia {
+          display: flex;
+          width: 155px;
+          margin-top: 20px;
+          flex: 50% 1;
+          padding: 3% 12%;
+          box-sizing: border-box;
+          align-self: start;
+          img {
+            max-width: 20px;
+            height: 100%;
+            margin: 0 auto;
+          }
+        }
+        .username {
+          flex: 50%;
+          padding: 0 10px 10px;
+          box-sizing: border-box;
+        }
+        .description {
+          flex: 50%;
+          margin-top: -30px;
+          padding: 0 10px 10px;
+          box-sizing: border-box;
+        }
+      }
+      .right {
+        .username {
+          order: 1;
+        }
+        .profilePic {
+          order: 2;
+        }
+        .description {
+          order: 3;
+        }
+        .socialMedia {
+          order: 4;
+        }
+      }
+      .center {
+        .profilePic {
+          order: 1;
+          flex: 100%;
+        }
+        .username {
+          order: 2;
+          flex: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .description {
+          order: 3;
+          flex: 50%;
+          margin: 0;
+        }
+        .socialMedia {
+          order: 4;
+          flex: 50%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .emailSignatureWrapper .profileContainer .left,
+    .emailSignatureWrapper .profileContainer .right,
+    .emailSignatureWrapper .profileContainer .center {
+      .profilePic,
+      .username,
+      .description,
+      .socialMedia {
+        flex: 100%;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}

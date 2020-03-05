@@ -1,0 +1,33 @@
+.templateContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  .selectTemplate {
+    & label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #808080;
+    }
+    .select {
+      max-width: 600px;
+      height: 40px;
+      border-radius: 5px;
+      color: #636262;
+      font-size: 16px;
+    }
+  }
+  .exportBtn {
+    border-radius: 1rem;
+    background: none;
+    width: 9rem;
+    height: 2rem;
+    border: 2px solid #ff0053fc;
+    margin: 30px 10px;
+    color: #ff0053fc;
+    font-size: 12px;
+    align-self: center;
+  }
+}
